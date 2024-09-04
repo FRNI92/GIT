@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --color-dark: #0B0F19 ;
+    --color-primary: #6366F1;
+    --color-gray: #9397AD ;
+    --color-white: #ffffff ;
+
+    --container-padding: 1rem;
+    --transition-time: all 0.2s;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body, section, div, header, footer, main, aside, nav, blockquote, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.container {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+}
+a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.btn-primary i {
+    margin-right: 0.4rem;
+}
+
+.btn-mobile {
+    background-color: transparent;
+    border:none;
+    font-size: 3rem;
+}
+
+.navbar {
+    display:none
+}
+
+.nav-link {
+    color: var(--color-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color:var(--color-primary);
+    text-decoration: underline;
+}
+.active {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+#auth-signin {
+    display: none;
+}
+
+header .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+#first {
+    
+    background:linear-gradient(to bottom, rgb(241, 244, 253)83%, rgb(218, 70, 239)42%, rgb(99, 102, 241)0%)
+}
+
+.picturespage2 {
+    display: flex;
+    gap: 5px;
+}
+.page2firstheader {
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    
+}
+
+.page2secondtext {
+    font-family: "Manrope", san-serif;
+    font-size: 18px;
+}
+
+.Easypayments {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+
+.Easypaymentext {
+    font-family: "manrope";
+    font-weight: 400;
+} */
+
+
+
+
+
+
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Page3 {
+    width: 80%;
+    margin: 0 auto;
+    
+    h2 {font-family: "manrope";
+    font-size: 40px;
+    color: #0B0F19;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.ruta {
+        background-color: #F3F6FF;
+        padding: 1rem;
+        display: grid;
+        place-items: center;
+    }
+
+#ruta-1 {
+    grid-column: 1 / 6 ;
+    grid-row: 1 / 1;
+}
+#ruta-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+}
+#ruta-3 {
+    grid-column: 2 / 3;
+    grid-row:  2 / 6;
+}
+#ruta-4 {
+    grid-column: 3 / 4 ;
+    grid-row: 2 / 6;
+}
+#ruta-5 {
+    grid-column: 1 / 6;
+    grid-row: 6 / 6;
+    h4 {
+        display:flex;
+        align-items: center;
+        align-items: flex-start;
+        font-family: "manrope";
+        font-size: 24px ;
+        color: 0B0F19;
+        opacity:80%;
+        text-align: center;
+
+    }
+    p{
+        text-align: center;
+        font-family: "manrope";
+        color: #565973;
+        opacity: 100%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.page4 {
+    background-color: #ffffff;
+    margin: 2rem;
+    width: 1000px;
+    height: 1077px;
+}
+.textpage4 {
+    color: #0B0F19;
+    font-weight: 900;
+    font-family: "manrope";
+
+} 
+.Checkmarktext1 {
+    
+    font-family: "manrope";
+    color: #565973;
+    font-size: 16px;
+    display:inline-block
+}
+.page4picture {
+    display: inline-block;
+
+}
+.page4secondtext {
+    color: #0B0F19;
+    font-size: 32px;
+    font-family: "manrope";
+} */
