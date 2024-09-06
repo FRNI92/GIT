@@ -10,6 +10,18 @@
     --transition-time: all 0.2s;
 }
 
+.firstpagetext {
+        color: #131022;
+        font-weight: 800;
+        font-size: 34.1px;
+        text-align: center;
+
+       p {
+        color: #585C7B;
+        font-size: 18px;
+        font-weight: 400;
+       }
+}
 
 * {
     box-sizing: border-box;
@@ -19,15 +31,23 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
     margin: 0;
     padding: 0;
 }
-
+header {
+    background: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+    width: 100%;
+    height: 100vh;
+    /* gör inte oppacity utanför background.  */
+    }
 
 body {
+
+
     font-family: "manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
 }
+
 .container {
     width: 100%;
     padding-left: var(--container-padding);
@@ -67,6 +87,7 @@ a:hover {
 
 .btn-primary i {
     margin-right: 0.4rem;
+
 }
 
 .btn-mobile {
@@ -105,6 +126,256 @@ header .container {
     gap: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    
+}
+
+#appstore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#googleplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.infobar{
+    display: flex;
+    gap: 1rem;
+    /* background-color: #cccccc; */
+    align-items: center;
+    justify-content: center;
+   p {
+    color: #585C7B;
+    font-size: 14px;
+    font-family: "manrope";
+    font-weight: 400;
+   }
+}
+
+
+.box {
+    /* background-color: #6366F1; */
+    padding: 1rem;
+
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    heaader .container {
+        gap: 3rem;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    header .container{
+        grid-template: auto 1fr auto auto;
+        gap: 2rem;
+    }
+
+    #auth-signin {
+        display: block;
+    }
+
+    
+    .navbar {
+        display:block;
+    }
+    
+    .btn-mobile {
+        display:none;
+
+    }
+}
+
+.Page2 div {
+
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+
+    background-color: #d5d9e4;
+    padding: 1rem;
+    border: 10px solid #6366F1;
+    font-family: "manrope";
+    
+.RubrikSida2 {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+    margin:auto;
+
+TextUnderRubrikSida2 {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+    margin:auto;
+}
+
+    
+}    
+    
+    
+    
+    
+    /* #Toptext {
+        display: flex;
+        color: #131022;
+        font-size: 27.9px;
+        font-weight: 900;
+    }
+    
+    #Bottomtext {
+        color: #585C7B;
+        font-size: 18px;
+        font-style: 400;
+        font-weight: 400;
+    } */
+}
+
+.picture {
+    margin-bottom: auto;
+}
+
+.EasyPayments {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr ;
+    /* display: grid;
+    gap: 1rem;
+    grid-auto-rows: minmax(100px, auto); */
+}
+
+
+.text {
+
+    /* background-color: #ffffff;
+    padding: 1rem;
+    border: 10px solid rgb(130, 57, 148); */
+}
+
+.Page3 {
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border: 10px solid #6366F1;
+    font-family: "manrope";
+    background: #F3F6FF;
+}
+
+.Page3HeadLine1 {
+    color: #131022;
+    max-width: 300px;
+    font-weight: 800;
+    font-size: 27.9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: auto;
+
+.Page3PictureOfMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: auto;
+}
+
+}
+
+.Page3SecondHeadLine {
+    color: #131022;
+    max-width: 300px;
+    font-weight: 800;
+    font-size: 21.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: auto;
+    }
+
+    .Page3UnderText {
+        color: #585C7B;
+        max-width: 300px;
+        font-weight: 400;
+        font-size: 16x;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: auto;
+    }
+
+
+    .Storbox{
+        max-width: 400px;
+        display: flex;
+        flex-direction:column;
+        color: black;
+        padding: 1rem;
+        border:solid;
+    }
+
+    .halvstorbox{
+        max-width: 400px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mellanboxvänster{
+        display:flex;
+        flex:1;
+        color: #131022;
+        font-size: 16px;
+        font-weight: 600 ;
+        border:solid black
+    }
+    .Page4Button{
+        background-color: #6366F1;
+        border: solid black;
+
+        #Page4ButtonContact{
+            margin-top:2rem;
+            padding: 15px 40px;
+
+        }
+    }
+
+    .mellanboxhöger{
+        color: black;
+        border:solid;
+    }
+
+.Newsletterbox{
+    display:flex;
+    flex-direction: row;
+    background-color: #F3F6FF ;
+    border: solid black;
+    padding: 1rem;
+}
+
+.Newsletterpicture{
+    border:solid black;
+    padding: 1rem;
+}
+
+.Newslettertext{
+    border:solid black;
+    padding: 1rem;
 }
 
 
@@ -112,40 +383,55 @@ header .container {
 
 
 
+#Subscribebutton {
+    Border:solid rgb(0, 0, 0);
+    padding: 1rem;
+    
+}
 
+.MailAndButton{
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+}
 
+.MailPicture{
+    max-width: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border: solid black;
+    padding:1rem;
+}
 
+.Email {
+    display:flex;
+    justify-content: center;
+    border:solid black;
+    padding: 1rem;
 
+}
+.Emailtext{
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    color: #6366F1;
+}
 
+.Subscribebutton{
+    border:solid black;
+    padding: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Footer{
+    background-color: white;
+}
+.TextFooter{
+    font-family: "Manrope";
+    color: #9397AD;
+    font-size: 14px;
+    font-weight: 300;
+}
 
 /* 
 
@@ -303,3 +589,5 @@ header .container {
     font-size: 32px;
     font-family: "manrope";
 } */
+
+
