@@ -150,56 +150,102 @@
         font-weight: 900;
         text-align: center;
     }
-
+@media (min-width: 1400px) {
+    .toptext{
+        display: none;
+    }
+@media (max-width) {
+    .tablet
+}
+}   
 }    
-    
+
 .download-mobile {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }    
-
-.bottompart { 
-
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:auto;
-    padding-bottom: 2rem; 
-
-}   
- .downbutton {
-    margin-right: 2rem;
- }
-
- @container(min-width: 500px) {
-    .bottompart{
-        display: none;
-    }
- }
-
-    
- @media (max-width:768px) {
-    .download-tablet{
-        display: none;
-    }
-    .bottompart-tablet{
-        display: none;
-    }
- }   
-
- }
-
-
 @media (min-width:768px) {
-    .download-mobile{
+    .download-mobile {
+        display: none;
+    }
+    .text {
+        display: none;
+    }
+}
+        
+@media (max-width:768px) {
+    .tablet-text-page1 {
         display:none;
     }
-    .darkmodetext{
-        display: flex;
-    }  
-
 }
+
+.bottompart { 
+    display: grid;
+    size: 80vh;
+    
+    /* grid-template-rows: repeat(2, 100px); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border:solid 1px black;
+
+    .discover {
+        grid-area: 2 / 5 / 5 / 4;
+    }
+    .tablet-text-page1 {
+        display:none;
+    }
+    .tabletmobilsida1 {
+        display: none;
+    }
+    
+    @media (min-width:768px) {
+        .bottompart {
+            display: none;
+        }
+    }
+    @media (min-width:768px) {
+
+        }
+        .tabletmobilsida1 {
+            display:grid;
+            grid-column: 4;
+        }
+        .tablet-text-page1 {
+            display: grid;
+        }
+        .box-1 {
+            display: grid;
+
+            grid-row: 2;
+        }
+        .box-2 {
+            display: grid;
+            grid-row: 2;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .download-tablet{
+            display: none;
+        }
+        .bottompart-tablet{
+            display: none;
+        }
+
+    }   
+
+    .discover {
+    display:flex;
+
+ }   
+    
+    
+}
+.darkmodetext{
+        display: flex;
+
+
 
 
 @media (min-width:1400px){
@@ -217,7 +263,14 @@
         display:none
        }
 
+/* desktop */
 
+.desktop-toptext {
+    display:none
+}
+@media (max-width:1400px) {
+    .desktop-toptextdisplay: grid;
+}
 
 
 /* 
