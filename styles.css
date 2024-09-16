@@ -248,3 +248,23 @@ h1 {
         height: auto;
         }
     }
+
+
+#brands {
+    .container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}  
+
+.brand-box {
+    border: 1px solid #E2E5F1;
+    border-radius: 8px;
+    height: 100px;
+    width: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
