@@ -268,3 +268,62 @@ h1 {
     align-items: center;
     
 }
+.containersida2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "mobil toptext"
+                        "mobil boxtextdown";
+    gap:20px;
+ }
+.mobil{
+    grid-area: mobil;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobil img {
+    max-width: 100%;
+    height: auto;
+}
+.toptext {
+
+    grid-area: toptext;
+    height:auto;
+
+}
+
+.boxtextdown {
+
+    display: flex;
+    grid-area: boxtextdown;
+    margin: bottom: 20px;
+}
+.btn-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px;
+    /* background-color:rgb(214, 214, 214) ; */
+    border-radius: 10px;
+    margin-right: 10px;
+
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    font-family: "manrope";
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h2 {
+    font-family: "manrope";
+    font-size: 18px;
+    margin-bottom:  5px;
+}
