@@ -327,3 +327,192 @@ h1 {
     font-size: 18px;
     margin-bottom:  5px;
 }
+
+
+.sida3 {
+    background: #F3F6FF;
+    padding: 50px 0;
+    text-align: center; 
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "headline"
+                            "mobiler"
+                            "bottomtext";
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+.headline{
+    grid-area: headline;
+}
+
+.headline h2 {
+    font-family: "manrope", sans-serif;
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+}
+
+.mobiler {
+    /* object-fit:cover; */
+    display:flex;
+    grid-area: mobiler;
+    justify-content: center;
+    align-items: center;
+}
+    .mobiler .mobil1,
+    .mobiler .mobil2,
+    .mobiler .mobil3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    
+.mobiler img {
+        max-width: 100px; /* Justera bredden på mobilerna */
+        height: auto;
+    }
+    
+    .bottomtext {
+        grid-area: bottomtext; /* Placerar texten längst ned i rätt grid-område */
+        font-family: "manrope", sans-serif;
+        font-size: 16px;
+        color: #333;
+    }
+
+
+
+
+
+    .btn-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px; 
+        height: 25px;
+        background-color: #ffffff; 
+        color: #6366F1; 
+        border: 2px solid #6366F1;
+        border-radius: 50%; 
+    }
+
+
+    /* sida4 */
+
+
+
+
+.sida4 {
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    height: 100vh;
+}
+.p4wrapper {
+    display: flex;
+    padding: 3rem;
+
+}
+
+.top-left-box {
+    max-width: 300px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.top-right-box{
+
+margin-left: auto;
+}
+
+.headline-box {
+    max-width: 400px;
+    text-align: left;
+}
+.p4headline {
+    font-family: "manrope";
+    font-size: 32px;
+    font-weight: 800;
+}
+.checkmark-andtext{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+    /* kan få gap mellan checkmark och text men ej mellan raderna */
+}
+
+.check-box-text{
+    font-family: "manrope";
+    color: #565973;
+    font-size: 16px;
+}
+
+.learnMore {
+    margin-top: 4rem;
+
+}
+
+.page5 {
+    background-color:#F3F6FF;
+    height: 50vh;
+}
+
+.page5-wrapper {
+    padding: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.page5-headline {
+    font-family: "manrope";
+    color: #0B0F19;
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 6rem;
+    margin-bottom:6rem;
+
+}
+
+.reviews {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* sida 5 */
+.page5-wrapper{
+    display: flex;
+}
+#box-1 {
+    font-family: "manrope";
+    font-size: 40px;
+    font-weight: 800;
+    color: #0B0F19;
+}
+.box {
+    background-color: #F3F6FF;
+    flex: 1;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+
+
+.page6-wrapper{
+    padding:4rem;
+    background-color: white;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
