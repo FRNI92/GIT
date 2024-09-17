@@ -506,13 +506,93 @@ margin-left: auto;
 }
 
 
-
+/* sida 6 */
 
 .page6-wrapper{
     padding:4rem;
+    padding-left: 20rem;
     background-color: white;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: 1fr;
 }
+.img-class {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.img-class img {
+ 
+    height: auto;
+}
+
+.text-box{
+    display: flex;
+    max-width: 50rem;
+    width: auto;
+    border: solid black;
+    padding: 20rem;
+    width: fit-content;
+    margin: 1px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 50px;
+    background-color: #F3F6FF; 
+    color: #33354D; 
+    border-radius: 50%; 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        .container {
+        display:flex;
+        background-color: white;
+        font-family: "manrope";
+        color: #9397AD;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        }
+    }
 
