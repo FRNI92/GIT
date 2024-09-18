@@ -232,14 +232,31 @@ h1 {
     align-items: center;
     
 }
-.containersida2 {
+
+/* sida 2 */
+.grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "mobil toptext"
-                        "mobil boxtextdown";
-    gap:20px;
- }
+    grid-template-columns: repeat(3, 1fr); /* Skapa 3 lika breda kolumner */
+    grid-template-rows: repeat(4, auto); /* Skapa 4 rader */
+    grid-template-areas:          
+    "mobil toptext toptext"
+    "mobil . ."
+    "mobil . ."
+    " . .";
+    gap: 1rem; /* Mellanrum mellan rutorna */
+    padding: 1rem; /* Padding runt hela grid-systemet */
+    gap: 1rem; /* Mellanrum mellan rutorna */
+    padding: 1rem; /* Padding runt hela grid-systemet */
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
 .mobil{
     grid-area: mobil;
     display: flex;
@@ -252,18 +269,10 @@ h1 {
     height: auto;
 }
 .toptext {
-
     grid-area: toptext;
-    height:auto;
-
 }
 
-.boxtextdown {
 
-    display: flex;
-    grid-area: boxtextdown;
-    margin: bottom: 20px;
-}
 .btn-square {
     display: flex;
     align-items: center;
@@ -274,22 +283,6 @@ h1 {
     border-radius: 10px;
     margin-right: 10px;
 
-}
-.text-content {
-    display: flex;
-    flex-direction: column;
-}
-.text {
-    font-family: "manrope";
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.text h2 {
-    font-family: "manrope";
-    font-size: 18px;
-    margin-bottom:  5px;
 }
 
 
@@ -376,12 +369,16 @@ h1 {
 }
 .top-right-box {
     grid-area: top-right-box;
+    display:flex;
+    justify-content: right;
 }
 .bottom-left-box {
     grid-area: bottom-left-container;
 }
 .bottom-right-box {
     grid-area: bottom-right-box;
+    display:flex;
+    justify-content: right;
 }
 
 .p4headline {
