@@ -248,16 +248,16 @@ h1 {
 .box-pic-and-text-1 {
     
     display: grid;
-    grid-template-columns: 3fr 3fr; /* Två kolumner som delar lika på utrymmet */
-    grid-template-rows: repeat(3, 1fr); /* Två rader som delar lika på utrymmet */
+    grid-template-columns: 3fr 3fr; 
+    grid-template-rows: repeat(3, 1fr); 
     grid-template-areas:          
     "img hl"
     "img2 hl2"
     "img3 hl3";
-    gap: 1rem; /* Mellanrum mellan rutorna */
-    padding: 1rem; /* Padding runt hela grid-systemet */
-    gap: 1rem; /* Mellanrum mellan rutorna */
-    padding: 1rem; /* Padding runt hela grid-systemet */
+    gap: 1rem; 
+    padding: 1rem; 
+    gap: 1rem; 
+    padding: 1rem; 
 }
 
 #headline {
@@ -266,11 +266,11 @@ h1 {
 #paragraph {
     grid-area: hl;
 }
-.images {
+ .page-2-image-1 {
     grid-area: img;
     display: flex;
-    justify-content: end;
-}
+     justify-content: end; 
+ }
 #headline1 {
     grid-area: hl2;
 }
@@ -297,16 +297,16 @@ h1 {
 .box-pic-and-text-2 {
     
     display: grid;
-    grid-template-columns: 3fr 3fr; /* Två kolumner som delar lika på utrymmet */
-    grid-template-rows: repeat(3, 1fr); /* Två rader som delar lika på utrymmet */
+    grid-template-columns: 3fr 3fr; 
+    grid-template-rows: repeat(3, 1fr); 
     grid-template-areas:          
     "img hl"
     "img2 hl2"
     "img3 hl3";
-    gap: 1rem; /* Mellanrum mellan rutorna */
-    padding: 1rem; /* Padding runt hela grid-systemet */
-    gap: 1rem; /* Mellanrum mellan rutorna */
-    padding: 1rem; /* Padding runt hela grid-systemet */
+    gap: 1rem; 
+    padding: 1rem; 
+    gap: 1rem; 
+    padding: 1rem; 
 }
 
 .head-line {
