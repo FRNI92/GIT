@@ -24,7 +24,7 @@
 
 }
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -38,6 +38,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+
 }
 
 .right-nav {
@@ -146,7 +147,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "headline images  " 
                             "content images  ";
-
 }
 
 .headline {
@@ -158,6 +158,8 @@
 
 p{
     font-family: "manrope";
+    text-align: left;
+    margin-top: 2rem;
 }
 
 
@@ -170,11 +172,15 @@ h1 {
 
 .content {
     grid-area: content;
+
+    display: flex;
     text-align: left;
     margin-bottom-auto;
+
 }
 
 .buttons {
+    margin-top: 4rem;
     justify-content: left;
     display: flex;
     gap: 1rem;
@@ -188,7 +194,6 @@ h1 {
     text-align: center;
     font-family: "manrope";
     align-items: center;
-    justify-content: left;
 }
 
 
@@ -210,6 +215,7 @@ h1 {
     display: grid;
     grid-area: images;
     position: relative;
+
 }
 
 
@@ -239,10 +245,10 @@ h1 {
     grid-template-columns: repeat(3, 1fr); /* Skapa 3 lika breda kolumner */
     grid-template-rows: repeat(4, auto); /* Skapa 4 rader */
     grid-template-areas:          
-    "mobil toptext toptext"
-    "mobil . ."
-    "mobil . ."
-    " . .";
+    "mobil toptext-1 toptext-1"
+    "mobil toptext-2 toptext-2"
+    "mobil toptext-2 toptext-2"
+    "mobil toptext-2 toptext-2";
     gap: 1rem; /* Mellanrum mellan rutorna */
     padding: 1rem; /* Padding runt hela grid-systemet */
     gap: 1rem; /* Mellanrum mellan rutorna */
@@ -268,8 +274,11 @@ h1 {
     max-width: 100%;
     height: auto;
 }
-.toptext {
-    grid-area: toptext;
+.toptext-1 {
+    grid-area: toptext-1;
+}
+.toptext-2 {
+    grid-area: toptext-2;
 }
 
 
