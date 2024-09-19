@@ -307,6 +307,21 @@ h1 {
     justify-content: end;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre kolumner med lika bredd */
+    grid-template-rows: repeat(2, 1fr);    /* Två rader med lika höjd */
+    gap: 1rem; /* Mellanrum mellan rutorna */
+    padding: 1rem;
+    max-width: 800px; /* Begränsar bredden på hela grid-layouten */
+    margin: 0 auto;   /* Centrerar grid-layouten horisontellt */
+}
+
+.grid-item {
+    background-color: #f3f3f3;
+
+}
+
 .box-pic-and-text-2 {
     
     display: grid;
@@ -361,22 +376,6 @@ h1 {
     display: flex;
     justify-content: start;
 }
-
-
-
-
-
-
-.grid-item {
-    background-color: #f4f4f4;
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    text-align: center;
-    font-size: 16px;
-}
-
-
-
 
 
 
