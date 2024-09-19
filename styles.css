@@ -1,20 +1,27 @@
 :root {
     --clr-purple-gradient: linear-gradient(to top, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
     --clr-headlinetextblack: #131022; 
-    --clr-textgray: #585C7B;
+    --clr-gray900: #0B0F19;
+    --clr-textgray500: #B4B7C9;
+    --clr-gray400: #D4D7E5;
     --font: "manrope";
     --backgroundclr: #0B0F19;
     --buttontext: white;
-    --NEW-gradient:linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(241,244,253,0.05) 7%, rgba(218,70,239,0.07) 83%);
+    --new-Gradient: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+
 }
+
+    
 
 
 
 * {
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.page-1-background{
+    background: var(--new-Gradient);
 }
     header {
     
@@ -27,6 +34,7 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
+
 }
 #navbar {
     display:flex;
@@ -34,10 +42,14 @@
     justify-content: space-between;
 }
 
+.left-nav p, .right-nav p {
+    margin: 0; 
+    /* varför tog inte wild vard bort detta:( tog 2 timmar att lösa detta med features och dark toggle */
+}
 .left-nav {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem;    
 
 }
 
@@ -59,6 +71,7 @@
 }
 .btn-primary i {
     margin-right: 1rem;
+
 }
 
     /* Joakims knapp */
@@ -492,9 +505,24 @@ h1 {
 
 .learnMore {
     margin-top: 4rem;
-
+    
 }
 
+.btn-purple {
+    background-color: #6366F1;
+    color: white;
+    width: 50px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px 40px;
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.btn-purple i {
+    margin-left: 1rem;
+}
 .page5 {
     background-color:#F3F6FF;
     height: 50vh;
@@ -564,7 +592,7 @@ h1 {
                         "img-class text-box";
 }
 
-..headline {
+.headline {
     grid-area: headline;
 }
 
@@ -595,27 +623,72 @@ h1 {
 
 .container-bottom {
     display: flex;
+    flex-start;
     padding: 5rem;
     font-family: "manrope";
     background-color: #F3F6FF ;
     justify-content: center;
     align-items: center;
     gap:2rem;
+}
 
+.container-bottom h4{
+    color: var(--clr-gray900);
+    font-size: 2rem;
+    font-weight: 900;
+    max-width: 650px;
+    min-width: 600px
 }
 
 
 
 
 
+.btn-subscribe-purple {
+    background-color: #6366F1;
+    color: white;
+    width: 50px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px 40px;
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
+.input-wrapper {
+    position: relative; 
+    display: flex;
+    align-items: center; 
 
+}
+.input-icon {
+    position: absolute;
+    left:70px; 
+    width: 20px; 
+    height: 20px; 
+    z-index: 1;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
 
+.form-input {
+    font-size: 1rem;
+    padding: .7em 3em;
+    border-radius: .5em;
+    border: 1px solid var(--clr-gray400);
+    margin-left: 50px;
+    &:focus {
+        outline:none;
+        box-shadow: 0 0 5px rebeccapurple;
+    }
+}
 
-
-
-
-
+.form-input::placeholder {
+    color: var(--clr-textgray500)
+}
 
 
 
