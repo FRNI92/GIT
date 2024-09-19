@@ -240,20 +240,119 @@ h1 {
 }
 
 /* sida 2 */
-.grid-container {
+
+.grid-container{
+    display:flex;
+}
+
+.box-pic-and-text-1 {
+    
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Skapa 3 lika breda kolumner */
-    grid-template-rows: repeat(4, auto); /* Skapa 4 rader */
+    grid-template-columns: 3fr 3fr; /* Två kolumner som delar lika på utrymmet */
+    grid-template-rows: repeat(3, 1fr); /* Två rader som delar lika på utrymmet */
     grid-template-areas:          
-    "mobil toptext-1 toptext-1"
-    "mobil toptext-2 toptext-2"
-    "mobil toptext-2 toptext-2"
-    "mobil toptext-2 toptext-2";
+    "img hl"
+    "img2 hl2"
+    "img3 hl3";
     gap: 1rem; /* Mellanrum mellan rutorna */
     padding: 1rem; /* Padding runt hela grid-systemet */
     gap: 1rem; /* Mellanrum mellan rutorna */
     padding: 1rem; /* Padding runt hela grid-systemet */
 }
+
+#headline {
+    grid-area: hl;
+}
+#paragraph {
+    grid-area: hl;
+}
+.images {
+    grid-area: img;
+    display: flex;
+    justify-content: end;
+}
+#headline1 {
+    grid-area: hl2;
+}
+#paragraph1 {
+    grid-area: hl2;
+}
+.images1 {
+    grid-area: img2;
+    display: flex;
+    justify-content: end;
+}
+#headline2 {
+    grid-area: hl3;
+}
+#paragraph2 {
+    grid-area: hl3;
+}
+.images2 {
+    grid-area: img3;
+    display: flex;
+    justify-content: end;
+}
+
+.box-pic-and-text-2 {
+    
+    display: grid;
+    grid-template-columns: 3fr 3fr; /* Två kolumner som delar lika på utrymmet */
+    grid-template-rows: repeat(3, 1fr); /* Två rader som delar lika på utrymmet */
+    grid-template-areas:          
+    "img hl"
+    "img2 hl2"
+    "img3 hl3";
+    gap: 1rem; /* Mellanrum mellan rutorna */
+    padding: 1rem; /* Padding runt hela grid-systemet */
+    gap: 1rem; /* Mellanrum mellan rutorna */
+    padding: 1rem; /* Padding runt hela grid-systemet */
+}
+
+.head-line {
+    grid-area: hl;
+}
+
+.second-box-paragraph {
+    grid-area: hl;
+}
+.images-second-box {
+    grid-area: img;
+    display: flex;
+    justify-content: start;
+
+
+}
+.headline-2 {
+    grid-area: hl2;
+}
+
+.paragraph-2 {
+    grid-area: hl2;
+}
+.images-second-box-2 {
+    grid-area: img2;
+    display: flex;
+    justify-content: start;
+}
+
+
+.headline-3{
+    grid-area: hl3;
+}
+.paragraph-3 {
+    grid-area: hl3;
+}
+.images-3 {
+    grid-area: img3;
+    display: flex;
+    justify-content: start;
+}
+
+
+
+
+
 
 .grid-item {
     background-color: #f4f4f4;
@@ -263,23 +362,10 @@ h1 {
     font-size: 16px;
 }
 
-.mobil{
-    grid-area: mobil;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.mobil img {
-    max-width: 100%;
-    height: auto;
-}
-.toptext-1 {
-    grid-area: toptext-1;
-}
-.toptext-2 {
-    grid-area: toptext-2;
-}
+
+
+
 
 
 .btn-square {
