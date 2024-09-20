@@ -254,9 +254,43 @@ h1 {
 
 /* sida 2 */
 
-.grid-container{
-    display:flex;
+
+
+.grid-container {
+    /* display: grid; */
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas: 
+    "left header header header"
+    ". sidebar sidebar footer"
+    ". sidebar sidebar footer";
 }
+.item-a {
+    grid-area: header;
+    background-color: lightblue;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item-b-picture {
+    grid-area: left;
+    background-color: lightgreen;
+    padding: 1rem;
+}
+
+.box-pic-and-text-1 {
+    grid-area: sidebar;
+    background-color: lightcoral;
+    padding: 1rem;
+}
+
+.box-pic-and-text-2 {
+    grid-area: footer;
+    background-color: lightgray;
+    padding: 1rem;
+    text-align: center;
+}
+
 
 .box-pic-and-text-1 {
     
@@ -496,25 +530,29 @@ h1 {
 .checkmark-andtext{
     display: flex;
     align-items: center;
+
     gap: .5rem;
-    margin-top: .5rem;
+    margin-top: 1.5rem;
     /* kan få gap mellan checkmark och text men ej mellan raderna */
 }
+.check-box-text {
+    margin: 0;
 
-
-.learnMore {
-    margin-top: 4rem;
+}
+.learn-more-button {
     
+
 }
 
+
 .btn-purple {
+    display:flex;
+    width: 195px;
+    margin-top: 3rem;
     background-color: #6366F1;
     color: white;
-    width: 50px;
-    height: 60px;
     border-radius: 8px;
     padding: 10px 40px;
-    /* display:flex; */
     justify-content: center;
     align-items: center;
     text-decoration: none;
