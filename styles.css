@@ -27,7 +27,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-.page-1-background{
+body {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.whole-website-size {
+    max-width: 1920px;
+
+}
+.manage-all-background{
     background: var(--new-Gradient);
 }
     header {
@@ -37,8 +47,8 @@
     padding: 1rem;
 
 }
-.container {
-    max-width: 1400px;
+.navbar-container {
+    /* max-width: 1400px; */
     margin: 0 auto;
     padding: 0 1rem;
 
@@ -65,6 +75,7 @@
     align-items: center;
     gap: 2rem;
 }
+
 
 .btn-primary {
     background-color: #6366F1;
@@ -241,10 +252,11 @@ h1 {
 
 #brands {
     .container {
-        max-width: 1400px;
+        /* max-width: 1400px; */
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap:1rem
     }
 }  
 
@@ -260,7 +272,7 @@ h1 {
 }
 
 /* sida 2 */
-.bucket {
+.App-features {
     margin:0;
     padding: 3rem;
     display: grid;
@@ -268,11 +280,11 @@ h1 {
     align-items: center;
     grid-template-columns: repeat(2, auto);
 }
-.fenix-1 {
+.mobil-app-features {
     grid-row: span 2;
 }
 
-.immortal-1 {
+.App-feature-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,13 +296,14 @@ h1 {
 .number-2-headline {
     font-size:40px ;
     color: var(--clr-gray900);
-.number-2-text {
+    
+    .number-2-text {
     color: var();
-}
+    }
 
 }    
 
-.grid-container {
+.Easy-payment-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
@@ -301,14 +314,16 @@ h1 {
 
 
 
- .sentry-1, .sentry-2, .sentry-3, .sentry-4, .sentry-5, .sentry-6 {
+ .Payment-icon-1, .Easy-payment-icon-2, .Easy-payment-icon-3,
+  .Easy-payment-icon-4, .Easy-payment-icon-5, .Easy-payment-icon-6 {
     display:flex;
     width: 100%;
     max-width: 300px;
     gap: 1rem;
 }
     
-.marine-1, .marine-2, .marine-3, .marine-4, .marine-5, .marine-6 {
+.Easy-payment-icon-text-1, .Easy-payment-icon-text-2, .Easy-payment-icon-text-3, 
+.Easy-payment-icon-text-4, .Easy-payment-icon-text-5, .Easy-payment-icon-text-6 {
     font-family: var(--fontfamily);
     color: var(--clr-gray900);
     font-size: 20px ;
@@ -339,15 +354,12 @@ h1 {
 
 
 /* page 3 */
-.wrapper {
+.How-does-wrapper {
     background-color: F3F6FF;
-    max-width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .headline h2 {
@@ -398,7 +410,7 @@ h1 {
     
 
 
-.p4wrapper {   
+.Make-your-wrapper {   
     display: grid;      
     max-width: 1400px;
     margin-top: 5rem;
@@ -410,7 +422,6 @@ h1 {
     grid-template-areas: "headlinebox top-right-box"
                             "bottom-left-container bottom-right-box";
     background-color: white;
-    /* height: 100vh; */
 }
 
 .headline-box{
@@ -425,13 +436,6 @@ h1 {
 .bottom-left-box {
     grid-area: bottom-left-container;
 }
-/* .bottom-right-box {
-    grid-area: bottom-right-box;
-    display:flex;
-    justify-content: right;
-} */
-
-
 
 
 
@@ -444,26 +448,24 @@ h1 {
         align-items: start;
     }
     
-.unit-1 {
+.Recieve-headline {
     font-family: var(--fontfamily);
     color: var(--clr-gray900);
     font-size: 2rem;
     grid-column: span 2;
 }
-.unit-2, .unit-3 {
+.Icon-recieve-1, .Icon-recieve-2 {
     margin-top: 2rem;
 }
 
-.unit-4, .unit-5 {
+.Icon-text-1, .Icon-text-2 {
     font-family: var(--fontfamily);
     color: var(--clr-gray700);
 }
 
-.unit-6 {
+.Icone-learn-btn{
     grid-column: span 2;
 }
-
-
 
 
 .p4headline {
@@ -530,7 +532,7 @@ h1 {
 
 
 /* sida 5 */
-.page5-wrapper{
+.Clients-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "box-1 box-2";
@@ -559,8 +561,8 @@ h1 {
 
 
 /* sida 6 */
-.Page-container-mothership {
-    padding:2rem;
+.FAQ-page {
+
     display:grid;
     justify-content: center;
     align-items: center;
@@ -571,9 +573,18 @@ h1 {
 .FAQ-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
 }
-.contact-viking {
+
+.FAQ-text h2, p{
+    font-family: "manrope";
+}
+
+
+
+.contact-container  {
     display: flex;
     gap:1rem;
 }
@@ -633,19 +644,14 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 500px;
-    height: 500px;
-    padding: 2rem;
 
-    /* ta bort när du jobbat klart med knappet */
 }
 .btn-drop-down {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     text-decoration: none;
-    text-align: left;
-    width: 750px; 
+
     height: 68px;
     color: black;
     background-color:rgb(255, 255, 255) ;
@@ -668,9 +674,8 @@ h1 {
 
 
 
-.container-bottom {
+.subscribe-container {
     display: flex;
-    flex-start;
     padding: 5rem;
     font-family: "manrope";
     background-color: #F3F6FF ;
@@ -740,27 +745,15 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    footer {
-        .container {
-        display:flex;
-        background-color: white;
-        font-family: "manrope";
-        color: #9397AD;
-        justify-content: center;
-        align-items: center;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        }
+footer {
+    .container {
+    display:flex;
+    background-color: white;
+    font-family: "manrope";
+    color: #9397AD;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     }
-
+}
