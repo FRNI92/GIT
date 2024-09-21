@@ -4,6 +4,7 @@
     --clr-gray900: #0B0F19;
     --clr-gray700: #565973;
     -clr-gray600:#9397AD;
+    --clr-gray300: #E2E5F1;
     --clr-textgray500: #B4B7C9;
     --clr-gray400: #D4D7E5;
     --fontfamily: "manrope";
@@ -12,6 +13,8 @@
     --new-Gradient: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
     --font-weight-800: 800;
     --font-weight-600: 600;
+
+    --clr-primary-purple: #6366F1;
 }
 
     
@@ -557,20 +560,38 @@ h1 {
 /* sida 6 */
 
 
-.phone-contact {
+.contact-box {
     display: flex;
     flex-direction: column;
-    padding-left: 10rem;
-    align-items: center;
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
+    justify-content: space-evenly;
     padding: 1rem;
-    margin: 1px;
+    height: 165px;
+    width: 200px;
+    border: 2px solid var(--clr-gray300);
+    border-radius: 8px;
+    
+}
+.img-and-text p {
+    font-display: flex;
+    margin-top: 1rem;
 }
 
+.contact-button {
+    display: flex;
+    margin-top: 2rem;
+    display: flex;
+    width: 160px; 
+    height: 30px;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--clr-primary-purple);
+    background-color:rgb(255, 255, 255);
+}
 
-
+.contact-button i {
+    margin-left: 1rem;
+}
 
 
 
