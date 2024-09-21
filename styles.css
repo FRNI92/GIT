@@ -15,6 +15,7 @@
     --font-weight-600: 600;
 
     --clr-primary-purple: #6366F1;
+    --clr-system-success: #22C55E;
 }
 
     
@@ -558,7 +559,24 @@ h1 {
 
 
 /* sida 6 */
+.Page-container-mothership {
+    padding:2rem;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+
+.FAQ-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.contact-viking {
+    display: flex;
+    gap:1rem;
+}
 
 .contact-box {
     display: flex;
@@ -592,9 +610,22 @@ h1 {
 .contact-button i {
     margin-left: 1rem;
 }
+.contact-button-message {
+    display: flex;
+    margin-top: 2rem;
+    display: flex;
+    width: 160px; 
+    height: 30px;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--clr-system-success);
+    background-color:rgb(255, 255, 255);
 
-
-
+}
+.contact-button-message i {
+    margin-left: 1rem;
+}
 
 
 
