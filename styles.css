@@ -677,8 +677,16 @@ h1 {
     background-color: #F3F6FF ;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    /* gap:2rem; */
+    
+
+
 }
+.bell-icon {
+    display: flex;
+    margin-right: 2rem;
+}
+
 
 .container-bottom h4{
     color: var(--clr-gray900);
@@ -695,11 +703,12 @@ h1 {
 .btn-subscribe-purple {
     background-color: #6366F1;
     color: white;
-    width: 50px;
-    height: 60px;
-    border-radius: 8px;
-    padding: 10px 40px;
-    /* display:flex; */
+    width: 150px;
+    height: 52px;
+    border-radius: 0 8px 8px 0;
+    /* padding: 10px 40px; */
+    display:flex;
+    column-gap: .5rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -708,7 +717,7 @@ h1 {
 .input-wrapper {
     position: relative; 
     display: flex;
-    align-items: center; 
+    align-items: center;
 
 }
 .input-icon {
@@ -725,9 +734,10 @@ h1 {
 .form-input {
     font-size: 1rem;
     padding: .7em 3em;
-    border-radius: .5em;
+    border-radius: 8px 0px 0px 8px;
     border: 1px solid var(--clr-gray400);
     margin-left: 50px;
+    height:52px;
     &:focus {
         outline:none;
         box-shadow: 0 0 5px rebeccapurple;
@@ -744,18 +754,31 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+
 }
+
 
 footer .footer-container {
     display:flex;
+
+    min-width: 275px;
+    max-width: 450px;
+
     background-color: white;
     font-family: "manrope";
     color: #9397AD;
+
     justify-content: center;
+    text-align: center;
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    text-align: center;
+
+    @media (width < 600px) {
+        display: flex;
+        max-width: 275px;
+    }
 }
 
 
