@@ -61,8 +61,10 @@ body {
 
 .left-nav p, .right-nav p {
     margin: 0; 
-    /* varför tog inte wild vard bort detta:( tog 2 timmar att lösa detta med features och dark toggle */
+
 }
+
+
 .left-nav {
     display: flex;
     align-items: center;
@@ -160,7 +162,6 @@ body {
 
 
 #hero {
-    
     display: grid;
     
 }
@@ -245,6 +246,7 @@ h1 {
 
 
 #brands {
+    scroll-margin-top:150px;
     .container {
         /* max-width: 1400px; */
         display:flex;
