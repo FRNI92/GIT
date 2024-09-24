@@ -3,8 +3,11 @@
     --clr-headlinetextblack: #131022; 
     --clr-gray900: #0B0F19;
     --clr-gray700: #565973;
+    --clr-gray800: #33354D;
     -clr-gray600:#9397AD;
     --clr-gray300: #E2E5F1;
+    --clr-gray100: #F3F6FF;
+
     --clr-textgray500: #B4B7C9;
     --clr-gray400: #D4D7E5;
     --fontfamily: "manrope";
@@ -48,11 +51,25 @@ body {
 
 }
 .navbar-container {
-    /* max-width: 1400px; */
+    max-width: 1400px;
+
     margin: 0 auto;
     padding: 0 1rem;
 
 }
+.feature-text {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight:var(--font-weight-600);
+    color: var(--clr-gray800);
+}
+
+.feature-text:hover {
+    color: var(--clr-primary-purple);
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
 #navbar {
     display:flex;
     align-items: center;
@@ -69,13 +86,14 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;    
-
 }
 
 .right-nav {
     display:flex;
     align-items: center;
     gap: 2rem;
+
+
 }
 
 
@@ -162,23 +180,37 @@ body {
 
 
 #hero {
-    display: grid;
+    max-width: 1400px;
     
 }
 
 
+#main {
+    padding-top:5rem;
+    display: grid;
+    max-width: 1400px;
+    align-items: center;
+    justify-content: center;
+}
 #hero .container {
     display: grid;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    column-gap: 10rem;
+  
+    grid-template-columns: 500px 200px;
+    grid-template-rows: auto;
     grid-template-areas: "headline images  " 
                             "content images  ";
 }
 
-.headline {
+.img-mobile {
+    display: flex;
+    height: 95%;
+}
+.headline-hero {
     
     grid-area: headline;
+    text-wrap: left;
     text-align: left;
     font-family: "manrope"; 
 }
@@ -222,8 +254,6 @@ h1 {
     align-items: center;
 }
 
-
-
 .btn-circle {
     display: flex;
     align-items: center;
@@ -244,15 +274,21 @@ h1 {
 
 }
 
+#brands{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #brands {
     scroll-margin-top:150px;
     .container {
-        /* max-width: 1400px; */
         display:flex;
+        max-width: 1400px;
         justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap:1rem
+        gap:2rem
     }
 }  
 
@@ -269,8 +305,8 @@ h1 {
 
 /* sida 2 */
 .App-features {
-    margin:0;
-    padding: 3rem;
+    margin-top: 4rem;
+    padding: 4rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -351,17 +387,21 @@ h1 {
 
 /* page 3 */
 .How-does-wrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: var(--clr-gray100);
     background-color: F3F6FF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-.headline h2 {
-    font-family: "manrope", sans-serif;
-    font-size: 32px;
-    color: #333;
+ .how-does-headline h1{
+    font-family: "Manrope", sans-serif;
+    font-size: 2.5rem;
+    color: var(--clr-gray900);
     margin-bottom: 2rem;
 }
 
@@ -424,11 +464,13 @@ h1 {
     grid-area: headlinebox;
 
 }
+
 .top-right-box {
     grid-area: top-right-box;
     display:flex;
     justify-content: right;
 }
+
 .bottom-left-box {
     grid-area: bottom-left-container;
 }
@@ -444,7 +486,7 @@ h1 {
         align-items: start;
     }
     
-.Recieve-headline {
+.recieve-headline {
     font-family: var(--fontfamily);
     color: var(--clr-gray900);
     font-size: 2rem;
@@ -498,10 +540,10 @@ h1 {
 .btn-purple i {
     margin-left: 1rem;
 }
-.page5 {
+/* .page5 {
     background-color:#F3F6FF;
     height: 50vh;
-}
+} */
 
 .page5-wrapper {
     padding: 2rem;
@@ -539,6 +581,7 @@ h1 {
     font-size: 40px;
     font-weight: 800;
     color: #0B0F19;
+    font-size: 2rem;
     margin-left: 10rem;
 #box-2 {
     grid-area: box-2
