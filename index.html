@@ -123,7 +123,7 @@
     </div>
     <div class="App-feature-text">
       <h1 class="number-2-headline">App Features</h1>
-      <p class="number-2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+      <p class="number-2-text">Lorem ipsum dolor sit amet,lutpat Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
     </div>
     <div class="Easy-payment-container">
       
@@ -191,7 +191,6 @@
   
 
 
-
        
      <!-- sida 3 -->
      <section>
@@ -207,8 +206,8 @@
           </div>
           
           <div class="bottomtext">
-            <h3>Latest transaction history</h3>
-            <p>Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. </p>
+            <h4 class="latest-transaction">Latest transaction history</h4>
+            <p class="latest-transaction-text">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. </p>
           </div>
         </div>
       </section>
@@ -311,7 +310,7 @@
     <div class="contact-container">
       <div class="contact-box">
         <div class="img-and-text">
-          <img src="/Bildersilicon/bildersida6/phone-icon.svg" alt="ringing old">
+          <img src="/Bildersilicon/bildersida6/phone-icon.svg" alt="ringing old phone">
           <p>Still have questions?</p>
         </div>
         <a href "#" class="contact-button">
@@ -334,6 +333,49 @@
     </div>
   </div>
   
+
+  <!-- <section class="drop-down-menu-container"></section>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+
+        <p>Lorem ipsum doloLorem0r Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi error expedita qui omnis ipsum eligendi, est quod hic sapiente sit obcaecati assumenda nesciunt? Culpa, inventore reiciendis unde, rem molestias corporis molestiae repudiandae voluptas quisquam, voluptates animi nemo suscipit ut sint repellendus? Cupiditate voluptas officia error saepe reprehenderit maxime ducimus sit. sit amet.</p>
+    </div>
+    
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+
+        <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi reprehenderit perspiciatis recusandae itaque ipsa earum, in commodi deleniti dolorum consectetur esse eveniet rerum laborum ex rem quas eaque enim omnis aut voluptate, atque adipisci officiis. Nulla quia mollitia distinctio voluptatem nesciunt. Autem dicta architecto voluptatibus omnis officia aspernatur saepe perspiciatis?.</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+</section> -->
+
+
+
+
   
   <section class="shadow-container">
     <a href="#" class="btn-drop-down">
@@ -403,5 +445,32 @@
 </footer>
 
 </section>
+
+
+<script>
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.style.opacity = "0";  // Gör panelen osynlig
+        setTimeout(function() {
+          panel.style.display = "none";  // Döljer panelen efter övergången
+        }, 600);  // Synkroniserar med övergångstiden
+      } else {
+        panel.style.display = "block";  // Visar panelen
+        setTimeout(function() {
+          panel.style.maxHeight = panel.scrollHeight + "px";  // Expanderar panelen
+          panel.style.opacity = "1";  // Gör panelen synlig
+        }, 10);  // Ger en liten fördröjning för att möjliggöra en smidig övergång
+      }
+    });
+  }
+  </script>
 </body>
 </html>
