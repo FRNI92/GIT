@@ -488,35 +488,43 @@ h1 {
         grid-area: bottom-right-box;
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
+        /* gap: 10px; */
         padding: 20px;
         align-items: start;
     }
     
-.recieve-headline {
-    font-family: var(--fontfamily);
-    color: var(--clr-gray900);
-    font-size: 2rem;
+.recieve-headline-box {
+
     grid-column: span 2;
 }
+.recieve-headline-text {
+    font-family: var(--fontfamily);
+    color: var(--clr-gray900);
+    font-weight: 900;
+    font-size: 2rem;
+}
 .Icon-recieve-1, .Icon-recieve-2 {
-    margin-top: 2rem;
+    margin-bottom: -6em;
 }
 
 .Icon-text-1, .Icon-text-2 {
+    margin-top: -2em;;
     font-family: var(--fontfamily);
     color: var(--clr-gray700);
+
 }
 
-.Icone-learn-btn{
+.Icon-learn-btn{
+    margin-top: -4em;
     grid-column: span 2;
 }
 
 
 .p4headline {
     font-family: "manrope";
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
+    text-wrap:  balance;
 }
 .checkmark-andtext{
     display: flex;
@@ -550,54 +558,57 @@ h1 {
 
 
 
-.reviews {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
 
 /* sida 5 */
+.client-section {
+    margin: 0 auto;
+}
+
 .Clients-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "box-1 box-2";
 }
 #box-1 {
+    
+
     grid-area: box-1;
     font-family: "manrope";
-    font-size: 40px;
+
+    padding-left:14rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #0B0F19;
-    font-size: 2rem;
+}
+
+#box-1 h2 {
+    text-align: left;
+    text-wrap: balance;
+}
 
 #box-2 {
-    grid-area: box-2
+    grid-area: box-2;
+    padding-right: 14rem;
 }
 
 
-}
+
 .box {
     background-color: #F3F6FF;
-    flex: 1;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 
 /* sida 6 */
 
 .FAQ-page {
-    width: 80%;  /* Bredden på div:en */
-    max-width: 1400px;  /* Begränsar bredden för div:en */
-    margin: 0 auto;  /* Centrera div:en horisontellt */
+    width: 80%;  
+    max-width: 1400px; 
+    margin: 0 auto;  
     display:flex;
     justify-content: space-around;
-    /* max-width: 1400px; */
-
-
 }
 
 
