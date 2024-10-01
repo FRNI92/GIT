@@ -614,6 +614,8 @@ h1 {
 /* sida 6 */
 
 .FAQ-page {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     width: 80%;  
     max-width: 1400px; 
     margin: 0 auto;  
@@ -625,7 +627,6 @@ h1 {
 .FAQ-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     gap: 3rem;
 }
@@ -633,6 +634,7 @@ h1 {
 .FAQ-text h2{
     max-width: 450px;
     font-family: "manrope";
+    color: var(--clr-gray900);
     font-weight: 800;
     font-size: 2rem;
     text-decoration: balance;
@@ -640,6 +642,7 @@ h1 {
 .FAQ-text p {
     max-width: 375px;
     font-family: "manrope";
+    color: var(--clr-gray700);
 }
 
 
@@ -653,6 +656,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
+    padding-right: 0;
     height: 165px;
     width: 200px;
     border: 2px solid var(--clr-gray300);
@@ -662,6 +666,9 @@ h1 {
 .img-and-text p {
     font-display: flex;
     margin-top: 1rem;
+    font-size: 0.875 ;
+    font-weight: 400;
+    color: var(--clr-gray700);
 }
 
 .contact-button {
@@ -670,6 +677,8 @@ h1 {
     display: flex;
     width: 160px; 
     height: 30px;
+    font-family: "manrope";
+    font-weight: 600;
     text-decoration: none;
     justify-content: flex-start;
     align-items: center;
@@ -686,6 +695,8 @@ h1 {
     display: flex;
     width: 160px; 
     height: 30px;
+    font-family: "manrope";
+    font-weight: 600;
     text-decoration: none;
     justify-content: flex-start;
     align-items: center;
@@ -709,10 +720,13 @@ h1 {
 
     background-color: #ffffff;
     color:#0B0F19;
-    font: size 1rem;
     font-weight: 600;
+    font-family: "Manrope";
+    color: var(--clr-gray900);
+    font-size: 1rem;
 
     border-radius: 8px;
+    margin-bottom: .8rem;
     cursor:pointer;
     padding:18px;
     width: 100%;
@@ -729,14 +743,9 @@ hur man fick javascriptet att fungera. */
 
 .active {
     background-color: #ffffff; 
+    margin-bottom: 0;
 }
 
-.accordion {
-    font-family: "Manrope";
-    color: var(--clr-gray900);
-    font-size: 1rem;
-
-}
 
 .accordion:hover {
     background-color: #6365f1da; 
@@ -792,6 +801,8 @@ hur man fick javascriptet att fungera. */
     display: block;  
     max-height: 200px; 
     opacity: 1;  
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
 }
 
@@ -800,7 +811,10 @@ hur man fick javascriptet att fungera. */
 
 .subscribe-container {
     display: flex;
-    padding: 5rem;
+    margin: auto;
+    border-radius: 8px;
+    max-width: 1400px;
+    padding: 5rem ;
     font-family: "manrope";
     background-color: #F3F6FF ;
     justify-content: center;
@@ -814,19 +828,13 @@ hur man fick javascriptet att fungera. */
     display: flex;
     margin-right: 2rem;
 }
+.subscribe-text h4 {
+    color: #0B0F19;
+    font-size: 1.5rem;
+    text-align: left;
+    text-wrap: balance;
 
-
-.container-bottom h4{
-    color: var(--clr-gray900);
-    font-size: 2rem;
-    font-weight: 900;
-    max-width: 650px;
-    min-width: 600px
 }
-
-
-
-
 
 .btn-subscribe-purple {
     background-color: #6366F1;
@@ -861,7 +869,7 @@ hur man fick javascriptet att fungera. */
 
 .form-input {
     font-size: 1rem;
-    padding: .7em 3em;
+    padding: .7em 3.5em;
     border-radius: 8px 0px 0px 8px;
     border: 1px solid var(--clr-gray400);
     margin-left: 50px;
@@ -900,7 +908,7 @@ footer .footer-container {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 1.5rem;
     padding-bottom: 4rem;
 
     @media (width < 600px) {
