@@ -121,7 +121,6 @@ body {
 
 
     input[type="checkbox"] {
-        /* appearance: none; */
         width: 0;
         height: 0;
         opacity: 0;
@@ -382,7 +381,6 @@ h1 {
     justify-content: center;
     width: 60px; 
     height: 60px;
-    /* background-color:rgb(214, 214, 214) ; */
     border-radius: 10px;
     margin-right: 10px;
 
@@ -441,22 +439,20 @@ h1 {
 }
 
 
-    /* sida4 */
-    
-    
-    .btn-checkbox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25px; 
-        height: 25px;
-        background-color: #ffffff; 
-        color: #6366F1; 
-        border: 2px solid #6366F1;
-        border-radius: 50%; 
-    }
-    
+/* sida4 */
 
+.btn-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px; 
+    height: 25px;
+    background-color: #ffffff; 
+    color: #6366F1; 
+    border: 2px solid #6366F1;
+    border-radius: 50%; 
+}
+    
 
 .Make-your-wrapper {   
     display: grid;      
@@ -493,7 +489,7 @@ h1 {
         grid-area: bottom-right-box;
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        /* gap: 10px; */
+
         padding: 20px;
         align-items: start;
     }
@@ -562,10 +558,6 @@ h1 {
 
 
 
-
-
-
-
 /* sida 5 gör kanske om detta till flex. eller så står jag mitt kast */
 .client-section {
     margin: 0 auto;
@@ -594,7 +586,7 @@ h1 {
     margin-left: 8rem;
     margin-right: 10rem;
     font-size: 2.5rem;
-    /* text-wrap: balance; */
+    text-wrap: balance;
 }
 
 #box-2 {
@@ -806,22 +798,19 @@ hur man fick javascriptet att fungera. */
     
 }
 
-
-
-
 .subscribe-container {
     display: flex;
     margin: auto;
     border-radius: 8px;
     max-width: 1400px;
     padding: 5rem ;
+    padding-left: 10rem;
+    padding-right: 10rem;
     font-family: "manrope";
     background-color: #F3F6FF ;
     justify-content: center;
     align-items: center;
-    /* gap:2rem; */
     
-
 
 }
 .bell-icon {
