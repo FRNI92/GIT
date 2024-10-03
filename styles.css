@@ -95,6 +95,11 @@ body {
 
 
 }
+.darkmodetext {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--clr-gray700);
+}
 
 
 .btn-primary {
@@ -112,7 +117,7 @@ body {
 
 }
 
-    /* Joakims knapp */
+    /* Joakim Lindhs knapp. har gjort den här delen genom att följa hans videor */
     .adaptive-btn {   
     width: 60px;
     height: 30px;
@@ -176,7 +181,7 @@ body {
     text-decoration: none;
 
 }
-
+    /* Joakim Lindhs knapp. har gjort den här delen genom att följa hans videor */
 
 #hero {
     max-width: 1400px;
@@ -214,8 +219,11 @@ body {
     font-family: "manrope"; 
 }
 
-p{
+.headline-hero p{
     font-family: "manrope";
+    font-size: 1.125rem;
+    font-weight: 400 ;
+    color:var(--clr-gray700);
     text-align: left;
     margin-top: 2rem;
 }
@@ -223,7 +231,8 @@ p{
 
 h1 {
     text-align: left;
-    font-size: 56px;
+    color: var(--clr-gray900);
+    font-size: 3.5rem;
     font-weight: 800;
     
 }
@@ -246,11 +255,18 @@ h1 {
 .discovermore {
     color: #565973;
     display:flex;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight:400;
     gap:1rem;
     margin-top: 2rem;
     text-align: center;
     font-family: "manrope";
     align-items: center;
+}
+.discovermore:hover {
+    color: var(--clr-primary-purple);
+    text-decoration: underline;
 }
 
 .btn-circle {
@@ -272,7 +288,7 @@ h1 {
     position: relative;
 
 }
-
+/* Hans Mattin-Lassei: har gjort en här delen genom att följa videon om brands och flexbox */
 #brands{
     display: flex;
     align-items: center;
@@ -280,7 +296,7 @@ h1 {
 }
 
 #brands {
-    scroll-margin-top:150px;
+    scroll-margin-top: -100px;
     .container {
         display:flex;
         max-width: 1400px;
@@ -301,6 +317,7 @@ h1 {
     align-items: center;
     
 }
+/* Hans Mattin-Lassei: har gjort en här delen genom att följa videon om brands och flexbox */
 
 /* sida 2 */
 .App-features {
@@ -319,18 +336,21 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 500px;
+    width: 600px;
     margin-left: 20rem;
     
     font-size: 1.125rem;
     font-family: var(--fontfamily);
 }
 .number-2-headline {
-    font-size:40px ;
+    font-size: 2.5rem ;
+    font-weight: var(--font-weight-800);
     color: var(--clr-gray900);
 }    
 
 .number-2-text {
+    margin-top: 1rem;
+    font-weight: 400;
     color: var(--clr-gray600);
 
 }
@@ -358,7 +378,7 @@ h1 {
 .Easy-payment-icon-text-4, .Easy-payment-icon-text-5, .Easy-payment-icon-text-6 {
     font-family: var(--fontfamily);
     color: var(--clr-gray900);
-    font-weight: var(--font-weight-800) ;
+    font-weight: 800;
     font-size: 1.25rem ;
 
     & p{
@@ -406,9 +426,9 @@ h1 {
     font-family: "Manrope", sans-serif;
     font-size: 2.5rem;
     color: var(--clr-gray900);
-    margin-bottom: 2rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
 }
-
 .mobiler {
     display: flex;
     justify-content: space-between;
@@ -436,6 +456,8 @@ h1 {
     text-align: center;
     text-wrap: wrap;
     max-width: 35rem;
+    font-weight: 400;
+    color: var(--clr-gray700);
 }
 
 
@@ -469,6 +491,7 @@ h1 {
 }
 
 .headline-box{
+    padding-top: 3rem;
     grid-area: headlinebox;
 
 }
@@ -509,7 +532,7 @@ h1 {
 }
 
 .Icon-text-1, .Icon-text-2 {
-    margin-top: -2em;;
+    margin-top: 1rem;;
     font-family: var(--fontfamily);
     color: var(--clr-gray700);
 
@@ -525,12 +548,15 @@ h1 {
     font-family: "manrope";
     font-size: 2rem;
     font-weight: 800;
+    color: var(--clr-gray900);
     text-wrap:  balance;
 }
 .checkmark-andtext{
     display: flex;
     align-items: center;
+    font-family: var(--fontfamily);
     color: var(--clr-gray700);
+    font-weight: 400;
     gap: .5rem;
     margin-top: 1.5rem;
 }
@@ -632,9 +658,11 @@ h1 {
     text-decoration: balance;
 }
 .FAQ-text p {
+    margin-top: 1rem;
     max-width: 375px;
     font-family: "manrope";
     color: var(--clr-gray700);
+    font-size: 1.125rem;
 }
 
 
@@ -657,15 +685,17 @@ h1 {
 }
 .img-and-text p {
     font-display: flex;
+    font-family: var(--fontfamily);
     margin-top: 1rem;
-    font-size: 0.875 ;
+    font-size: 0.875rem ;
     font-weight: 400;
     color: var(--clr-gray700);
 }
 
 .contact-button {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     width: 160px; 
     height: 30px;
@@ -683,7 +713,8 @@ h1 {
 }
 .contact-button-message {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     width: 160px; 
     height: 30px;
@@ -773,7 +804,8 @@ hur man fick javascriptet att fungera. */
 
 .panel p {
     font-family: "manrope";
-    color: var(--clr-gray900);
+    font-weight: 400;
+    color: var(--clr-gray700);
     font-size: 0.875;
 }
 
@@ -797,6 +829,9 @@ hur man fick javascriptet att fungera. */
     padding-bottom: 1rem;
     
 }
+/* följde https://www.w3schools.com/howto/howto_js_accordion.asp för att göra drop-down-menyerna.
+chatgpt guidade mig till vilka delar som skulle ändras för att få det mer likt Siliconvalley-designen. samt 
+hur man fick javascriptet att fungera. */
 
 .subscribe-container {
     display: flex;
@@ -819,6 +854,7 @@ hur man fick javascriptet att fungera. */
 }
 .subscribe-text h4 {
     color: #0B0F19;
+    font-weight: 800;
     font-size: 1.5rem;
     text-align: left;
     text-wrap: balance;
@@ -865,7 +901,7 @@ hur man fick javascriptet att fungera. */
     height:52px;
     &:focus {
         outline:none;
-        box-shadow: 0 0 5px rebeccapurple;
+        box-shadow: 0 0 5px var(--clr-primary-purple);
     }
 }
 
