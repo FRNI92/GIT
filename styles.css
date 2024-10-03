@@ -31,6 +31,7 @@
     box-sizing: border-box;
 }
 body {
+    font-family: "Manrope";
     width: 100%;
     display:flex;
     justify-content: center;
@@ -103,7 +104,7 @@ body {
 
 
 .btn-primary {
-    background-color: #6366F1;
+    background-color:var(--clr-primary-purple);
     color: white;
     border-radius: 8px;
     padding: 10px 40px;
@@ -117,7 +118,8 @@ body {
 
 }
 
-    /* Joakim Lindhs knapp. har gjort den här delen genom att följa hans videor */
+    /*Har gjort den här delen genom att kolla på videon Joakim Lindh laddade upp om Custom checkboxes.
+    https://www.youtube.com/watch?v=uSQaJb2rPcw&t=2950s&ab_channel=EPNSverigeAB-Utbildning */
     .adaptive-btn {   
     width: 60px;
     height: 30px;
@@ -182,6 +184,8 @@ body {
 
 }
     /* Joakim Lindhs knapp. har gjort den här delen genom att följa hans videor */
+
+
 
 #hero {
     max-width: 1400px;
@@ -288,7 +292,8 @@ h1 {
     position: relative;
 
 }
-/* Hans Mattin-Lassei: har gjort en här delen genom att följa videon om brands och flexbox */
+/* Har gjort en här delen genom att följa videon om brands och flexbox som Hans Mattin-Lassei har gjort.
+https://www.youtube.com/watch?v=Fwp_gNbbr7Q&t=2s&ab_channel=EPNSverigeAB-Utbildning*/
 #brands{
     display: flex;
     align-items: center;
@@ -317,7 +322,11 @@ h1 {
     align-items: center;
     
 }
-/* Hans Mattin-Lassei: har gjort en här delen genom att följa videon om brands och flexbox */
+/*har gjort en här delen genom att följa videon om brands och flexbox */
+
+
+
+
 
 /* sida 2 */
 .App-features {
@@ -414,7 +423,6 @@ h1 {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: var(--clr-gray100);
-    background-color: F3F6FF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -584,7 +592,7 @@ h1 {
 
 
 
-/* sida 5 gör kanske om detta till flex. eller så står jag mitt kast */
+/* sida 5*/
 .client-section {
     margin: 0 auto;
 }
@@ -638,7 +646,7 @@ h1 {
     max-width: 1400px; 
     margin: 0 auto;  
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -736,33 +744,36 @@ h1 {
     width: 50%;
 }
 
+/* följde https://www.w3schools.com/howto/howto_js_accordion.asp för att göra drop-down-menyerna.
+chatgpt guidade mig till vilka delar som skulle ändras för att få det mer likt Siliconvalley-designen. samt 
+hur man fick javascriptet att fungera. */
+.accordion-item {
+    
+    margin-bottom: .5rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
 .accordion {
     display:flex;
     justify-content: space-between;
-    align-items: center;
-
+  
     background-color: #ffffff;
-    color:#0B0F19;
+
     font-weight: 600;
     font-family: "Manrope";
     color: var(--clr-gray900);
     font-size: 1rem;
 
     border-radius: 8px;
-    margin-bottom: .8rem;
     cursor:pointer;
     padding:18px;
-    width: 100%;
-    text-align:left;
     border: none;
     outline: none;
-    transition: .4s;
 
-    box-shadow: 0 2px 10px #ededf0 ;
 }
-/* följde https://www.w3schools.com/howto/howto_js_accordion.asp för att göra drop-down-menyerna.
-chatgpt guidade mig till vilka delar som skulle ändras för att få det mer likt Siliconvalley-designen. samt 
-hur man fick javascriptet att fungera. */
 
 .active {
     background-color: #ffffff; 
@@ -935,11 +946,6 @@ footer .footer-container {
     align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 4rem;
-
-    @media (width < 600px) {
-        display: flex;
-        max-width: 275px;
-    }
 }
 
 
