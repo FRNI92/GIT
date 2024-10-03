@@ -387,22 +387,8 @@
             <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
           </div>
       </div>
-
-
-
-        
-
-        
-
-    
     </section>
-    
-    
   </div>
-
-
-
-
 
 
 <section>
@@ -454,16 +440,16 @@
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
-        panel.style.opacity = "0";  // Gör panelen osynlig
+        panel.style.opacity = "0";  
         setTimeout(function() {
-          panel.style.display = "none";  // Döljer panelen efter övergången
-        }, 600);  // Synkroniserar med övergångstiden
+          panel.style.display = "none";  
+        }, 600);  
       } else {
-        panel.style.display = "block";  // Visar panelen
+        panel.style.display = "block"; 
         setTimeout(function() {
-          panel.style.maxHeight = panel.scrollHeight + "px";  // Expanderar panelen
-          panel.style.opacity = "1";  // Gör panelen synlig
-        }, 10);  // Ger en liten fördröjning för att möjliggöra en smidig övergång
+          panel.style.maxHeight = panel.scrollHeight + "px"; 
+          panel.style.opacity = "1";  
+        }, 10); 
       }
     });
   }

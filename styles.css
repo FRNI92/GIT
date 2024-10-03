@@ -11,7 +11,7 @@
     --clr-textgray500: #B4B7C9;
     --clr-gray400: #D4D7E5;
     --fontfamily: "manrope";
-    --backgroundclr: #0B0F19;
+    /* --backgroundclr: #0B0F19; */
     --buttontext: white;
     --new-Gradient: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
     --font-weight-800: 800;
@@ -83,19 +83,13 @@ body {
 }
 
 
-.left-nav {
+.left-nav, .right-nav {
     display: flex;
     align-items: center;
     gap: 2rem;    
 }
 
-.right-nav {
-    display:flex;
-    align-items: center;
-    gap: 2rem;
 
-
-}
 .darkmodetext {
     font-size: 1rem;
     font-weight: 600;
@@ -758,6 +752,7 @@ hur man fick javascriptet att fungera. */
 
 .accordion {
     display:flex;
+    align-items: center;
     justify-content: space-between;
   
     background-color: #ffffff;
@@ -817,12 +812,12 @@ hur man fick javascriptet att fungera. */
     font-family: "manrope";
     font-weight: 400;
     color: var(--clr-gray700);
-    font-size: 0.875;
+    padding: 1rem;
+    font-size: 0.875rem;
 }
 
 .panel {
-     width: 70%; 
-    padding: 0 18px;
+     width: 100%; 
     background-color: rgb(255, 255, 255);
     display: none;
     overflow: hidden;
@@ -833,11 +828,10 @@ hur man fick javascriptet att fungera. */
 
 }
 .panel.show {
-    display: block;  
-    max-height: 200px; 
+    max-height: 400px; 
     opacity: 1;  
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
+
     
 }
 /* följde https://www.w3schools.com/howto/howto_js_accordion.asp för att göra drop-down-menyerna.
